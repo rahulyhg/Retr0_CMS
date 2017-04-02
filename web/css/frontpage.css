@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,500italic,500,400italic,300,100,100italic,300italic);
+@import url(960_24_col.css);
+@import url(material-icons.css);
+@import url(ghpages-materialize.css);
+
+.container_24 .header-menu li { float: left; /*+placement: ;*/ position: relative; left: 0; top: 0; line-height: 0; padding-top: 0; padding-right: 37px; }
+.container_24 .header-menu { float: right; margin-top: 27px; margin-right: 0; }
+.container_24 .header-menu .iconRight { /*+placement: -1px 8px;*/ position: relative; left: -1px; top: 8px; }
+.header-menu .active a { padding-right: 6px; /*+placement: ;*/ position: relative; left: 0; top: 0; margin-left: -6px; }
+html { position: relative; min-height: 100%; }
+label { margin-left: -10px; }
+body { background: #FCFCFC; font: 14px 'Roboto', sans-serif; margin: 0; padding: 0; user-select: none; -webkit-user-select: none; -moz-user-select: none; -o-user-select: none; }
+#front-header { background: #FEFEFE; height: 90px; width: 100%; border-bottom: 1px solid #F5F5F5; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+#front-header .logo { background: url(../img/habbologo_whiteR.png); height: 67px; width: 191px; position: absolute; margin-top: 10px; }
+#front-header .onlineBox { height: 30px; position: absolute; top: 80px; left: 0px; background: #FFF; font: 13px 'Roboto'; border-radius: 2px; line-height: 28px; padding: 0 32px; color: rgba(0, 0, 0, 0.7); margin-left: 13px; }
+#front-header .signIn { float: right; margin-top: 25px; margin-right: 10px; }
+#front-header .joinNow { background: #00897B; float: right; margin-top: 25px; }
+#registerlast { background: rgba(241, 241, 241, 0); padding: 45px 30px; box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08); text-align: center; border: 2px solid transparent; text-transform: uppercase; margin-bottom: 20px; }
+#registerusers { width: 80px; height: 72px; border-radius: 50px; margin-top: 6px; margin-left: 85px; position: left; }
+#front-header-content { background: url(../img/tiles.png); -webkit-animation: header_color 30s infinite; height: 230px; width: 100%; }
+@-webkit-keyframes header_color {
+    36% { background-color: #175EB4; }
+    48% { background-color: #4CA978; }
+    60% { background-color: #1D8F9A; }
+    72% { background-color: #4C5EA9; }
+    84% { background-color: #764CA9; }
+    96% { background-color: #A94C93; }
+    100% { background-color: #A94C4C; }
+}
+@keyframes header_color {
+    0% { background-color: #175EB4; }
+    12% { background-color: #4CA978; }
+    24% { background-color: #1D8F9A; }
+    36% { background-color: #69A94C; }
+    48% { background-color: #4CA978; }
+    60% { background-color: #4CA2A9; }
+    72% { background-color: #4C5EA9; }
+    84% { background-color: #764CA9; }
+    96% { background-color: #A94C93; }
+    100% { background-color: #A94C4C; }
+}
+#front-header-content .hotel { background: url(../img/bg_hotel.png) no-repeat center center; height: 230px; width: 520px; position: absolute; right: -39px; }
+#front-header-content h2 { font: 300 32px 'Roboto', sans-serif; color: #FFF; margin-top: 50px; margin-bottom: 0; }
+#front-header-content p { font: 300 16px 'Roboto', sans-serif; color: #FFF; margin-bottom: 0; }
+#footer-content { position: absolute; bottom: 0; width: 100%; height: 60px; text-align: left; line-height: 60px; color: #FFF; background: #212121; box-shadow: inset 0 4px 2px rgba(0, 0, 0, 0.1); }
+#front-header-content .container_24 .grid_12 .left { height: 259px; width: 168px; background-image: url('https://www.habbo.de/habbo-imaging/avatarimage?figure=lg-3023-1429.hr-3531-32-40.sh-295-1408.fa-3474-63.ha-1002-63.ch-215-1408.hd-190-1391.cp-3312-63&direction=2&head_direction=3&action=wav&size=l&gesture=sml'); margin-top: -21px; background-size: 168px 313px; /*+placement: -6px -7px;*/ position: relative; left: -6px; top: -7px; image-rendering: pixelated; margin-left: -44px; float: left; }
+#front-header-content .container_24 .grid_12 .left p { float: left; padding-top: 0px; font-size: 23px; color: #FFFFFF; line-height: 1.6; padding-bottom: 0; }
+.container_24 .grid_12 .left .infome { margin-left: 168px; margin-top: 128px; width: 351px; height: 72px; float: left; }
+#front-header-content .container_24 .grid_12 .left .infome li { float: left; margin-top: 26px; margin-right: 26px; list-style: none; color: #FFFFFF; font-size: 14px; }
+#front-header-content .container_24 .grid_12 .left .infome li .icon { float: left; margin-right: 2px; background-image: url('../img/icon.png'); width: 16px; height: 21px; }
+#front-header-content .container_24 .grid_12 .left .infome li .icon.credits { background-position: 0px -145px; }
+#front-header-content .container_24 .grid_12 .left .infome li .icon.diament { background-position: -95px 559px; }
+#front-header-content .container_24 .grid_12 .left .infome li .icon.jetons { background-position: -128px 847px; }
+.container_24 .left .infome #mebadge .badge { background-image: url('https://habboo-a.akamaihd.net/c_images/album1584/UK459.gif'); height: 46px; width: 47px; float: hide; margin-left: 2px; float: left; margin-right: 11px; background-color: rgba(58, 58, 58, 0.505); padding: 7px; margin: -37px 5px -8px 0; background-position: 3px 3px; background-repeat: no-repeat; border-radius: 5px; }
+.container_24 .grid_12 .left .infome p { width: 401px; height: 0px; float: left; }

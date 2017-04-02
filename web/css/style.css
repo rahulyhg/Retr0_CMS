@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,500italic,500,400italic,300,100,100italic,300italic);
+@import url(960_24_col.css);
+@import url(material-icons.css);
+@import url(ghpages-materialize.css);
+
+body {
+    background: #FCFCFC;
+    font: 14px 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+}
+
+#header-content {
+    background: url(../img/tiles.png) #00897B;
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .10);
+    margin-bottom: 10px;
+}
+
+#header-content .logo {
+    background: url(../img/habbologo_whiteR.png);
+    height: 67px;
+    width: 191px;
+    position: absolute;
+    margin-top: 20px;
+    transition: opacity .3s;
+}
+
+#header-content .logo:hover {
+    opacity: .8;
+}
+
+#header-content .onlineBox {
+    height: 41px;
+    position: absolute;
+    top: 35px;
+    left: 220px;
+    background: #fff;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    font: 13px 'Roboto';
+    border-radius: 2px;
+    line-height: 41px;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, .7);
+}
+
+#header-content .onlineBox .arrow {
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    border-width: 10px;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+#header-content .hotel {
+    background: url(../img/bg_hotel.png) no-repeat center -200px;
+    height: 150px;
+    width: 722px;
+    position: absolute;
+    right: 0;
+    opacity: .2;
+}
+
+#header-content .header-buttons-position {
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+}
+
+#header-content .header-menu {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    float: left;
+    margin-top: 110px;
+}
+
+#header-content .header-menu li {
+	text-transform: uppercase;
+	display: block;
+    float: left;
+}
+
+#header-content .header-menu li a {
+    color: rgba(255, 255, 255, .8);
+    height: 40px;
+    line-height: 40px;
+	padding: 0 20px;
+    transition: color .3s;
+    margin-bottom: 0;
+    font: 400 17px 'Roboto', sans-serif;
+    float: left;
+    cursor: pointer;
+    display: block;
+	text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 2px;
+}
+
+#header-content .header-menu li a:hover {
+	color: #fff;
+}
+
+#header-content .header-menu li.selected a {
+    font-weight: bold;
+	color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#header-content .header-menu li .iconLeft {
+    padding-right: 6px;
+    margin-bottom: 0;
+    position: relative;
+    top: 6px;
+}
+
+#header-content .header-menu li .iconRight {
+    position: relative;
+    padding-left: 4px;
+    margin-bottom: 0;
+    top: 6px;
+}
+
+#header-content .header-menu ul {
+    background: #fff;
+    display: none;
+    min-width: 100px;
+    max-height: 650px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    will-change: width, height;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+#header-content .header-menu ul li {
+    clear: both;
+    cursor: pointer;
+    min-height: 50px;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+#header-content .header-menu ul li:last-child {
+    border-bottom-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+}
+
+#header-content .header-menu ul li a, #header-content .header-menu ul li a:hover {
+    font-size: 15px;
+    color: #26a69a;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: none;
+    width: 100%;
+}
+
+#header-content .header-menu ul li:hover, #header-content .header-menu ul li.active {
+    background: #eee;
+}
+
+#header-content .header-menu ul li.divider {
+    min-height: 0;
+    height: 1px;
+}
+
+#contentBox {
+    background: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#contentBox .title {
+    background: #00897B;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#contentBox .title.small {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contentBox .padding {
+    padding: 10px;
+}
+
+/* Profile */
+.profile_bg {
+    background: center center;
+    height: 160px;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    position: relative;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.profile_bg .avatar {
+    background: no-repeat;
+    height: 180px;
+    width: 22%;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.profile_bg .username {
+    font: 300 34px 'Roboto';
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.profile_bg .motto {
+    font: 200 18px 'Roboto';
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.profile_bg .lastonline {
+    font: 200 13px 'Roboto';
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 105px;
+}
+
+.profile_bg .clientButton {
+    position: absolute;
+    right: 30px;
+    margin-top: 50px;
+}
+
+#events {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+#events li {
+    padding: 10px;
+}
+
+/* Profile - Hot Campaigns */
+#hot-campaigns {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#hot-campaigns .hot-campaigns-item {
+    height: 90px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+#hot-campaigns .hot-campaigns-item:last-child {
+    border-bottom: none;
+}
+
+#hot-campaigns .hot-campaigns-item .hot-campaigns-item-image {
+    background: no-repeat center center;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    left: 30px;
+}
+
+#hot-campaigns .hot-campaigns-item .hot-campaigns-item-details-position {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-left: 120px;
+}
+
+#hot-campaigns .hot-campaigns-item .hot-campaigns-item-details-position .hot-campaigns-item-title {
+    font: 500 16px 'Roboto', sans-serif;
+}
+
+#hot-campaigns .hot-campaigns-item .hot-campaigns-item-readmore {
+    position: absolute;
+    right: 30px;
+    margin-top: -35px;
+}
+
+#footer-content {
+    background: #212121;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, .3);
+}
