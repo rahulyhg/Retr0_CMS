@@ -67,6 +67,7 @@
     <div id="front-header-content">
         <div class="container_24">
             <div class="grid_12">
+            <div class="hotel"></div>
                 <div class="left">
                     <div id="avatar">
                     </div>
